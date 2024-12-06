@@ -1,0 +1,646 @@
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+.Tokenomics {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #2e003e 0%, #1c0126 100%), url('path/to/your-gothic-texture.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-dark: #2e003e; /* Púrpura oscuro gótico */
+    --accent-color: #a020f0;  /* Morado brillante para acentos */
+    --text-light: #e4d9f2;    /* Texto en un tono claro */
+    --gold-color: #FFD700;   /* Color dorado */
+    --gold-hover: #FFC107;   /* Color dorado más claro */
+    --purple-text: #6a0dad;  /* Color púrpura para texto */
+    --purple-hover: #4B0082; /* Púrpura más oscuro al pasar el cursor */
+}
+
+/* Header styles */
+header {
+    background: var(--background-dark); /* Coincide con el fondo general de la página */
+    color: var(--text-light);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-color); /* Añade una separación visual */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Social Links Styles */
+.social-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno adicional */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.social-links li {
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+}
+
+.social-links a {
+    color: var(--gold-color); /* Color dorado permanente para íconos */
+    text-decoration: none;
+    font-size: 1rem; /* Tamaño normal */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilo para botones */
+.cta-button {
+    background-color: var(--gold-color); /* Fondo dorado */
+    border: none;
+    border-radius: 5px;
+    color: var(--purple-text); /* Texto púrpura */
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.cta-button:hover {
+    background-color: var(--gold-hover); /* Fondo dorado más claro */
+    transform: scale(1.05); /* Efecto de zoom */
+    color: var(--purple-hover); /* Texto púrpura más oscuro */
+}
+
+/* Estilo para enlaces dorados en FAQ */
+#faq a {
+    color: var(--gold-color); /* Color dorado para los enlaces de FAQ */
+    text-decoration: none;
+}
+
+#faq a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* FAQ Section Styles */
+#faq {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #1c0126 0%, #2e003e 100%);
+    text-align: center; /* Título sigue centrado */
+    border-top: 1px solid var(--accent-color);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    max-width: 800px; /* Limita el ancho para mejor legibilidad */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-align: left; /* Alinea preguntas a la izquierda */
+}
+
+.faq-item p, .faq-item ol {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    text-align: left; /* Alinea respuestas a la izquierda */
+}
+
+/* Footer styles */
+footer {
+    background: #1c0126;
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--accent-color);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer p:last-child {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Welcome {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.About {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Center align all heading tags */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* Center all content horizontally and vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main, header, footer {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Header adjustments */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo on the left */
+.logo {
+    flex: 1; /* Ocupa el espacio necesario a la izquierda */
+    max-height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Center navigation menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 2; /* Ocupa el espacio central */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Language selector to the right */
+.language-selector {
+    flex: 1; /* Ocupa espacio a la derecha */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Language selector adjustments */
+.language-selector {
+    flex: 1; /* Keep space to the right */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Add some space between the buttons */
+}
+
+.lang-button {
+    background: linear-gradient(180deg, #6a0dad 0%, #4B0082 100%); /* Purple gradient texture */
+    color: white; /* White text */
+    border: 1px solid #6a0dad; /* Border matches purple gradient */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Add padding for better appearance */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.lang-button:hover {
+    background: #4B0082; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Push language selector further right */
+.language-selector {
+    flex: 1; /* Maintain alignment logic */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 20px; /* Add margin to push further to the right */
+}
+
+/* Separate the language selector from the navigation menu */
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Three sections: logo, menu, language selector */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-left: 20px; /* Add space between menu and language selector */
+}
+
+/* Move language selector to the top-right corner */
+.language-selector {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for the "Welcome to Dark Shrub" title */
+#hero h1 {
+    font-size: 3rem; /* Increase font size */
+    color: var(--accent-color); /* Match the FAQ purple color */
+    text-align: center; /* Ensure it remains centered */
+    margin-top: 20px; /* Add some space from the top */
+}
+
+/* Timeline Section */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    position: relative;
+    border-top: 2px solid var(--accent-color); /* Línea superior */
+}
+
+.timeline-item {
+    flex: 0 0 250px; /* Cada item tiene un ancho fijo */
+    background: var(--background-dark);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-weight: bold;
+    color: var(--gold-color);
+    margin-bottom: 10px;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Line Between Items */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent-color);
+    z-index: 0;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: var(--gold-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd):before {
+    background: var(--purple-hover);
+}
+
+.timeline-item:nth-child(even):before {
+    background: var(--gold-hover);
+}
+
+/* Remove bullets from lists globally */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Specific adjustment for tokenomics section if needed */
+#tokenomics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Alternate colors for the title "Welcome to Dark Shrub" */
+#hero h1 span:nth-child(odd) {
+    color: var(--gold-color); /* Gold for odd letters */
+}
+
+#hero h1 span:nth-child(even) {
+    color: var(--accent-color); /* Purple for even letters */
+}
+
+/* Connect Wallet Button Styles */
+#connect-wallet-button {
+    background: var(--gold-color);
+    color: var(--purple-text);
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#connect-wallet-button:hover {
+    background: var(--gold-hover);
+    transform: scale(1.05);
+}
+
+#wallet-address {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Improvements for accessibility */
+button:focus, a:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #1c0126 0%, #2e003e 100%);
+    border-top: 1px solid var(--accent-color);
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+
+#presale {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #2e003e 0%, #1c0126 100%);
+    text-align: center;
+    border-top: 1px solid var(--accent-color);
+}
+
+#presale h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+#presale { text-align: center; margin: 20px auto; padding: 20px; max-width: 600px; }
+
+#presale input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#presale button { display: block; margin: 10px auto; 
+    margin-top: 10px;
+}
+
+#presale p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header content */
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        width: 100%; /* Buttons occupy full width */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    img {
+        max-width: 100%; /* Ensure images fit smaller screens */
+    }
+
+    .timeline {
+        flex-direction: column; /* Stack timeline items */
+        gap: 10px;
+    }
+
+    .timeline-item {
+        width: 100%; /* Make timeline items full width */
+    }
+    
+    #presale input {
+        width: 80%; /* Input field adapts to smaller screens */
+    }
+}
+
+/* Ensure main menu displays horizontally on mobile devices */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: row; /* Force horizontal alignment */
+        justify-content: space-around; /* Space items evenly */
+        width: 100%; /* Occupy full width */
+    }
+    
+    .nav-links li {
+        margin: 0; /* Remove vertical margins */
+    }
+}
+
+/* Styled menu with button-like appearance */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--background-dark);
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+    flex: 1; /* Make each menu item occupy equal space */
+    text-align: center;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 15px;
+    background-color: var(--gold-color);
+    color: var(--purple-text);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--gold-color);
+}
+
+/* Alternate colors for menu items */
+.nav-links li:nth-child(even) a {
+    background-color: var(--accent-color);
+    color: var(--gold-color);
+}
+
+.nav-links li:nth-child(even) a:hover {
+    background-color: var(--gold-hover);
+    color: var(--purple-hover);
+}
+
+/* Ensure menu looks good on small screens */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        margin-bottom: 5px; /* Add spacing between rows */
+    }
+}
+
+/* Center the menu both horizontally and vertically */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Adjust height if needed for centering */
+}
+
+.nav-links {
+    justify-content: center; /* Ensure menu links are centered */
+    align-items: center; /* Vertically align items */
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 0; /* Add some vertical padding on small screens */
+    }
+}
